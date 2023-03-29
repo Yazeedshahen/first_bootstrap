@@ -221,17 +221,17 @@ header{
     .carousel.slide video{
       width: 100%;
     }
-    form{
+    .landing form{
         position: absolute;
         z-index: 3;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
         background-color: #ffffff2b;
-    padding: 45px;
+      padding: 45px;
     }
     @media (max-width:767px){
-        form{
+        .landing form{
             position: absolute;
             z-index: 3;
             top: 50%;
@@ -670,6 +670,113 @@ header{
     color: var(--main-color);
   }
    /* end footer  */
+   /*  */
+   /*  */
+   /*  */
+     /* /.......//////////////////////////////////// */
+   /* start seconde page  */
+   /* start job filter  */
+   .job-filter{
+    padding-top: 150px;
+   
+   }
+   .job-filter form{
+    background-color: white;
+    box-shadow: 0 12px 12px #00000069;
+    border-radius: 6px;
+    padding: 20px;
+    width: 86%;
+    margin: -33px auto 40px;
+   }
+   .job-filter form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+   }
+   .job-filter form .flex .box{
+    flex: 1 1 12rem;   
+} 
+
+   .job-filter form .flex .box p{
+    font-size: 20px;
+    color: #ececec;
+   }
+   .job-filter form .flex .box p span{
+    color: red;
+   }
+   .job-filter form .flex .box .input{
+    width: 100%;
+    border-radius: 8px;
+    padding: 20px;
+    color: black;
+    margin: 16px 0;
+    background-color: #ececec;
+   }
+   @media(max-width:767px){
+    .job-filter form{
+        margin-top: 62px;
+
+    }
+   }
+   .job-filter form .dropdown-container{
+    margin-top:16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:16px; 
+  }
+  .dropdown .lists .items{
+    margin-left: 12px;
+    border-radius: 0.5rem;
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+  }
+  .job-filter form .dropdown-container .dropdown{
+    flex: 1 1 12rem;
+    position: relative;
+  }
+  .job-filter .lists{
+    z-index: 2;
+  }
+  .job-filter form .dropdown-container .dropdown .input{
+    width: 100%;
+    background-color: #ececec;
+    border-radius: 0.5rem;
+    padding: 16px;
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+  }
+  .job-filter form .dropdown-container .dropdown .input:placeholder-shown{
+    text-transform: capitalize;
+  }
+  .job-filter form .dropdown-container .dropdown .lists{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right:0;
+    background-color: white;
+    padding: 14px;
+    border-radius: 0.5rem;
+    box-shadow: 0 12px 12px #00000069 ;
+    transition: 0.3s linear;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  .job-filter form .dropdown-container .dropdown .lists .items:hover{
+    background-color: #ececec;
+  }
+  .job-filter form .dropdown-container .dropdown .lists:hover,
+  .job-filter form .dropdown-container .dropdown:hover .lists,
+  .job-filter form .dropdown-container .dropdown .input:focus + .lists,
+  .job-filter form .dropdown-container .dropdown .input:focus-within + .lists{
+    transform: scaleY(1);
+    transition: 0.3s linear;
+  }
+   /* end job filter  */
    /* start button */
     .up a{
         background-color: var(--main-color);
